@@ -48,7 +48,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'Admin1234',
-  database: 'lab2'
+  database: 'test'
 
 });
 global.db = db;
