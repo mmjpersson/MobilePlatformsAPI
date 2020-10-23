@@ -44,7 +44,7 @@ app.use((err, req, res, next) => {
   next();
 });
 
-var conn = mysql.createConnection({
+var db = mysql.createConnection({
   host: "mobileplatformsprojectdatabase.mysql.database.azure.com",
   user: "maxpersson@mobileplatformsprojectdatabase", 
   password: 'Secretdata14', 
