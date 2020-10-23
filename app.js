@@ -50,7 +50,7 @@ var conn = mysql.createConnection({
   password: {Secretdata14}, 
   database: {project}, 
   port: 3306
-}};
+});
 
 global.db = db;
 
