@@ -44,13 +44,14 @@ app.use((err, req, res, next) => {
   next();
 });
 
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Admin1234',
-  database: 'test'
+var conn = mysql.createConnection({
+  host: "mobileplatformsprojectdatabase.mysql.database.azure.com",
+  user: "maxpersson@mobileplatformsprojectdatabase", 
+  password: {Secretdata14}, 
+  database: {project}, 
+  port: 3306
+}};
 
-});
 global.db = db;
 
 db.connect((err) => {
