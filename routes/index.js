@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  let query = 'SELECT * FROM upload_files_statistics ORDER BY timestamp ASC LIMIT 20';
+  let query = 'SELECT * FROM upload_files_statistics ORDER BY timestamp ASC';
 
   db.query(query, (err, result) => {
       if (err) {
@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/Graphs', function(req, res, next) {
-    let query = 'SELECT timestamp, solar_modul FROM upload_files_statistics ORDER BY timestamp ASC LIMIT 20';
+    let query = 'SELECT timestamp, solar_modul FROM upload_files_statistics ORDER BY timestamp ASC';
 
     db.query(query, (err, result) => {
         if (err) {
