@@ -49,7 +49,7 @@ var db = mysql.createConnection({
   user: "maxpersson@mobileplatformsprojectdatabase", 
   password: 'Secretdata14', 
   database: 'project', 
-  port: 20029
+  port: 3306
 });
 
 global.db = db;
