@@ -44,6 +44,8 @@ app.use((err, req, res, next) => {
   next();
 });
 
+console.log('Trying to connect');
+
 var db = mysql.createConnection({
   host: "mobileplatformsprojectdatabase.mysql.database.azure.com",
   user: "maxpersson@mobileplatformsprojectdatabase", 
